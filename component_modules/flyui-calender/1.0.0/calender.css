@@ -1,0 +1,182 @@
+
+.calender {
+    font-size: 12px;
+    border: 1px solid #ddd;
+}
+.calendar-container {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.calendar-container .calender {
+    width: 250px;
+    border: none;
+}
+
+.calender-head {
+    padding: 6px 6px 5px;
+    height: 26px;
+    line-height: 26px;
+    border-bottom: 1px solid #ddd;
+}
+
+.calender-foot {
+    padding: 8px 10px;
+    border-top: 1px solid #ddd;
+}
+
+.calender-body {
+    padding: 6px;
+}
+
+.calender-head .next,
+.calender-head .prev {
+    width: 26px;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calender-head .next,
+.calender-foot .ok {
+    float: right;
+}
+
+.calender-head .prev,
+.calender-foot .cancel {
+    float: left;
+}
+
+.calender-head .date {
+    margin: 0 30px;
+    text-align: center;
+}
+
+.calender-foot .now {
+    display: block;
+    margin: 0 54px;
+    text-align: center;
+    color: #286090;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.calender-head .date span {
+    display: inline-block;
+    padding: 0 7px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.calender-head .next:hover,
+.calender-head .prev:hover,
+.calender-head .date span:hover,
+.calender-foot .time span:hover {
+    background-color: #e0e0e0;
+}
+
+.calender .btn {
+    width: 50px;
+}
+
+.calender table {
+    width: 100%;
+    margin: 0;
+    table-layout: fixed;
+
+}
+
+.calender th {
+    font-weight: normal;
+}
+
+.calender td {
+    height: 29px;
+}
+
+.calender td,
+.calender th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.calender th.dow {
+    height: 34px;
+}
+
+.calender-body td.year,
+.calender-body td.month {
+    height: 52px;
+}
+
+.calender-body td.time {
+    height: 174px;
+}
+
+.calender-body td.time ul {
+    height: 174px;
+    padding: 0;
+    margin-bottom: 6px;
+    position: relative;
+    list-style: none;
+    overflow: auto;
+}
+
+.calender-body td span,
+.calender-body td li {
+    display: inline-block;
+    line-height: 22px;
+    padding: 0 4px;
+    border-radius: 3px;
+}
+
+.calender-body td li {
+    display: block;
+}
+
+.calender-body td.year span,
+.calender-body td.month span,
+.calender-body td.prev span,
+.calender-body td.next span {
+    padding: 5px 10px;
+}
+
+.calender-body td:hover span,
+.calender-body li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+.calender-body td.old span,
+.calender-body td.new span {
+    color: #999;
+}
+
+.calender-body td.active span,
+.calender-body li.active {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: #fff;
+}
+
+.calender-body td.active:hover span,
+.calender-body td.active:active span,
+.calender-body li.active:hover,
+.calender-body li.active:active {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+
+.calender-body td.disabled span,
+.calender-body td.disabled:hover span,
+.calender-body li.disabled,
+.calender-body li.disabled:hover  {
+    background: 0;
+    color: #999;
+    cursor: not-allowed;
+}

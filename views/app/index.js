@@ -8,6 +8,8 @@ require.async([
     'list',
     'alert',
     'dialog',
+    'calender',
+    'datepicker',
 ], function ($, fly, Router, site, list) {
 
     var vm = fly({
@@ -59,7 +61,25 @@ require.async([
     fly.bind(document.body, vm);
 
     router.start();
+// 实例化元素
+    // js生成了calender日历控件，ok句柄没反应
+    var demo4 = document.getElementById('calenderDemo4');
 
+    // 实例化配置      
+    var options = {
+        format: 'yyyy-MM-dd HH:mm:ss',
+        ok: function(e){
+            debugger
+            fly.alert('当前选择日期为' + e.result);
+        },
+        clear: function(){
+            debugger
+            fly.alert('你取消了');
+        }
+    };
+
+    // 日历控件实例化
+    new fly.ui.calender(demo4, options);
     
 
 });

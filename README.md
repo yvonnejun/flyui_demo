@@ -6,6 +6,9 @@ flyui项目--demo
 # install dependencies
 npm install
 
+fly install flyui/alert
+fly install flyui/calender
+
 # serve with hot reload at localhost:5050
 fly release -pw 
 

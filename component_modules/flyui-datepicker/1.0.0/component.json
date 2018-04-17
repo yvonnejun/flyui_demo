@@ -1,0 +1,16 @@
+{
+  "name": "datepicker",
+  "version": "1.0.0",
+  "description": "flyui datepicker",
+  "main": "datepicker.js",
+  "files": [
+    "datepicker.js",
+    "datepicker.tpl"
+  ],
+  "dependencies": {
+    "flyui/calender": "1.0.0",
+    "flyui/popup": "1.0.0",
+    "lib/fly": "1.2.6",
+    "lib/jquery": "1.8.2"
+  }
+}

@@ -1,0 +1,13 @@
+ {
+   "name": "popup",
+   "version": "1.0.0",
+   "description": "flyui popup",
+   "main": "popup.js",
+   "files": [
+     "popup.css",
+     "popup.js"
+   ],
+   "dependencies": {
+     "flyui/animated": "1.0.0"
+   }
+ }

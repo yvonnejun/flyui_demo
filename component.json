@@ -7,6 +7,8 @@
     "flyui/router": "1.0.0",
     "flyui/alert": "1.0.1",
     "flyui/list": "1.0.0",
-    "flyui/dialog": "1.0.0"
+    "flyui/dialog": "1.0.0",
+    "flyui/calender": "1.0.0",
+    "flyui/datepicker": "1.0.0"
   }
 }

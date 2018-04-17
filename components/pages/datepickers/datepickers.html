@@ -1,0 +1,45 @@
+<div class="dashboard">
+  <!--http://ifit.fun/#/flyui/calender-->
+  <p>当前页面：datepickersDEMO</p>
+  <div class="datepickers-wrap">
+    <div class="row">
+      <div class="col-xs-6">
+        <!--日历下拉框1: 3.27到3.30号是有效的-->
+        <div 
+            data-role="datepicker" 
+            data-placeholder="请选择日期" 
+            style="width:255px;" 
+            data-format="yyyy-MM-dd"
+            data-min-date="2018-03-27"
+            data-max-date="2018-03-31">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <!--日历下拉框2-->
+        <div 
+            id="datepicker5"
+            data-role="datepicker" 
+            data-placeholder="请选择日期" 
+            style="width:255px;display:inline-block;" 
+            data-format="yyyy-MM-dd"
+            data-bind="events: {ok: options.changeEvent}, value: datepickerDay">
+        </div>
+        <button class="btn btn-primary" data-bind="click: options.valueEvent">获取当前值</button>
+        <button class="btn btn-success" data-bind="click: options.openEvent">打开弹窗</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <!--日历下拉框3：双日历，绑定同一个data属性值，会同时影响这两个日历控件的日期值-->
+        <fly:datepicker id="startDateA" style="width:255px;" data-bind="value: options.demoBCvalue" data-max-date="endDateA" ></fly:datepicker>
+
+      </div>
+      <div class="col-xs-6">
+        <!--日历下拉框3：双日历-->
+        <fly:datepicker id="endDateA" style="width:255px;display:inline-block;" data-bind="value: options.demoBCvalue" data-min-date="startDateA" ></fly:datepicker>
+        <button class="btn btn-success" data-bind="click: options.demoBAvalue">转换时间格式</button>
+      </div>
+
+    </div>
+  </div>
+</div>

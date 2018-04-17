@@ -1,0 +1,24 @@
+<div class="dashboard">
+  <!--http://ifit.fun/#/flyui/calender-->
+  <p>当前页面：flycalendersDEMO</p>
+  <div class="flycalenders-wrap">
+    <div class="row">
+      <div class="col-xs-4">
+        <!--<button data-bind="click: options.ok1" class="btn btn-info">点击弹窗-提示</button>-->
+        <!--日历框1-->
+        <div data-role="calender" data-format="yyyy/MM/dd" data-bind=" events: {ok: options.okHandle2, clear: options.clearHandle}"></div>
+      </div>
+      <div class="col-xs-4">
+        <!--时间框2-->
+        <div data-role="calender" data-format="yyyy-MM-dd HH:mm:ss" data-bind=" events: {ok: options.okHandle2, clear: options.clearHandle}"></div>
+      </div>
+      <div class="col-xs-4">
+        <!--日历范围选择框3-->
+        <!--注意：1、效果是范围外的日期都是禁止选择的-->
+        <!--注意：2、日历选择的取值范围是取最小值&&后面的最大值2017-04-27，取最大值||后面的$now值-->
+        <div data-role="calender" data-format="yyyy-MM-dd" data-min-date="2017-03-27 && 2017-04-27" data-max-date="2018-03-31 || $now" data-bind=" events: {ok: options.okHandle2, clear: options.clearHandle}"></div>
+      </div>
+    </div>
+    <div id="demo4"></div>
+  </div>
+</div>
