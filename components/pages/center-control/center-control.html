@@ -1,0 +1,491 @@
+<div class="center-control-wrap">
+  <!--logo-->
+  <div class="center-control-logo"></div>
+  <!--time-->
+  <div class="center-control-timeclock">
+    <i class="timeclock-icon"></i>
+    <span class="timeclock-item" data-bind="text: options.getFullYear"></span>年
+    <span class="timeclock-item" data-bind="text: options.getMonth"></span>月
+    <span class="timeclock-item" data-bind="text: options.getDate"></span>日
+    <span id="getTimes" class="timeclock-item-time" data-bind="text: options.getTimes"></span>
+    <span class="timeclock-item-time" data-bind="text: options.getWeek"></span>
+  </div>
+  <!--left-area-->
+  <div class="center-control-leftbar">
+    <div class="center-resourcereport">
+      <div class="center-resourcereport-provincial">
+        <h4>省直</h4>
+        <div class="datacenter_item_context">
+          <div class="datacenter_item">
+            <h2>64 <i>个</i></h2>
+            <span>部门总数</span>
+          </div>
+          <div class="datacenter_item">
+            <h2>26 <i>个</i></h2>
+            <b class="text-orange2">+20</b>
+            <span>已上报部门数</span>
+          </div>
+          <div class="datacenter_item">
+            <h2>992 <i>个</i></h2>
+            <b class="text-blue2">+20</b>
+            <span>已梳理目录</span>
+          </div>
+          <div class="datacenter_item">
+            <h2>854 <i>个</i></h2>
+            <b class="text-blue2">+20</b>
+            <span>已上线目录</span>
+          </div>
+        </div>
+        <div class="provincial-info-list">
+          <div class="provincial-info-list-item">
+              <i class="item-icon icon-databsetable"></i>
+              <span class="list-item-text">数据库表</span>
+              <b>
+                <span class="commontxt">3,532</span>个
+                <span class="tiptxt tiptxtred">-20</span>
+              </b>
+          </div>
+          <div class="provincial-info-list-item">
+              <i class="item-icon icon-folds"></i>
+              <span class="list-item-text">文件及文件夹</span>
+              <b>
+                <span class="commontxt">3,532</span>个
+                <span class="tiptxt">+20</span>
+              </b>
+          </div>
+          <div class="provincial-info-list-item">
+              <i class="item-icon icon-serviceinterface"></i>
+              <span class="list-item-text">服务接口</span>
+              <b>
+                <span class="commontxt">3,532</span>个
+                <span class="tiptxt">+20</span>
+              </b>
+          </div>
+
+        </div>
+      </div>
+      <div class="center-resourcereport-city">
+        <h4>地市</h4>
+        <div class="datacenter_item_context">
+          <div class="datacenter_item">
+            <h2>64 <i>个</i></h2>
+            <span>部门总数</span>
+          </div>
+          <div class="datacenter_item">
+            <h2>26 <i>个</i></h2>
+            <b class="text-orange2">+20</b>
+            <span>已上报部门数</span>
+          </div>
+          <div class="datacenter_item">
+            <h2>992 <i>个</i></h2>
+            <b class="text-blue2">+20</b>
+            <span>已梳理目录</span>
+          </div>
+          <div class="datacenter_item">
+            <h2>854 <i>个</i></h2>
+            <b class="text-blue2">+20</b>
+            <span>已上线目录</span>
+          </div>
+        </div>
+        <div class="provincial-info-list">
+          <div class="provincial-info-list-item">
+              <i class="item-icon icon-databsetable"></i>
+              <span class="list-item-text">数据库表</span>
+              <b>
+                <span class="commontxt">3,532</span>个
+                <span class="tiptxt tiptxtred">-20</span>
+              </b>
+          </div>
+          <div class="provincial-info-list-item">
+              <i class="item-icon icon-folds"></i>
+              <span class="list-item-text">文件及文件夹</span>
+              <b>
+                <span class="commontxt">3,532</span>个
+                <span class="tiptxt">+20</span>
+              </b>
+          </div>
+          <div class="provincial-info-list-item">
+              <i class="item-icon icon-serviceinterface"></i>
+              <span class="list-item-text">服务接口</span>
+              <b>
+                <span class="commontxt">3,532</span>个
+                <span class="tiptxt">+20</span>
+              </b>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="center-nationalreport">
+      <h1 class="area-title">国家上报</h1>
+      <div class="center-resourcereport-provincial">
+        <h4>省直</h4>
+        <div class="center_item_context">
+          <div class="center_item">
+            <p>数据库表</p>
+            <div class="center_item_content">
+              <div class="center_item_datachange">
+                <h5>数据交换</h5>
+                <span><b>64</b>万次</span>
+              </div>
+              <div class="center_item_datanum">
+                <h5>数据量</h5>
+                <span><b>26</b>GB</span>
+              </div>
+            </div>
+          </div>
+          <div class="center_item">
+            <p class="pos-vcenter">文件</p>
+            <div class="center_item_content">
+              <div class="center_item_datachange">
+                <h5>数据交换</h5>
+                <span><b>64</b>万次</span>
+              </div>
+              <div class="center_item_datanum">
+                <h5>数据量</h5>
+                <span><b>26</b>GB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="center-resourcereport-city">
+        <h4>地市</h4>
+        <div class="center_item_context">
+          <div class="center_item">
+            <p>数据库表</p>
+            <div class="center_item_content">
+              <div class="center_item_datachange">
+                <h5>数据交换</h5>
+                <span><b>64</b>万次</span>
+              </div>
+              <div class="center_item_datanum">
+                <h5>数据量</h5>
+                <span><b>26</b>GB</span>
+              </div>
+            </div>
+          </div>
+          <div class="center_item">
+            <p class="pos-vcenter">文件</p>
+            <div class="center_item_content">
+              <div class="center_item_datachange">
+                <h5>数据交换</h5>
+                <span><b>64</b>万次</span>
+              </div>
+              <div class="center_item_datanum">
+                <h5>数据量</h5>
+                <span><b>26</b>GB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--center-main-area-->
+  <div class="center-main-area">
+    <!--topbanner-->
+    <div class="center-main-top">
+      <div class="center-main-databasetable">
+        <i class="icon-databasetable"></i>
+        <span class="databasetable-item-title">数据库表</span>
+        <div class="databasetable-item-content">
+          <span>数据交换<b>840<em>万次</em></b></span>
+          <span>数据量<b>140<em>条</em></b></span>
+        </div>
+      </div>
+      <div class="center-main-file">
+        <i class="icon-databasefile"></i>
+        <span class="databasefile-item-title">文件</span>
+        <div class="databasefile-item-content">
+          <span>文件交换<b>100<em>万次</em></b></span>
+          <span>文件下载<b>2000<em>次</em></b></span>
+          <span>数据量<b>1,493<em>TB</em></b></span>
+        </div>
+      </div>
+      <div class="center-main-service">
+        <i class="icon-databaseservice"></i>
+        <span class="databaseservice-item-title">服务</span>
+        <div class="databaseservice-item-content">
+          <span>服务调用<b>1,493<em>次</em></b></span>
+          <!--<span>数据量<b>140<em>条</em></b></span>-->
+        </div>
+      </div>
+    </div>
+
+    <div id="bubblegraph"></div>
+
+    <div class="center-main-bottom-runtimelogtable">
+      <div class="runtimelog-wrap">
+        <div class="runtimelog-list">
+          <div class="runtimelog-list-item">
+            <i class="icon-runtimeicontick"></i>
+            <p>
+              <b class="runtime-date">01-12</b>
+              <b class="runtime-time">13:01:59</b>
+              <span>合肥市 新增 《安徽省发展改革委关于xx项目办理国家鼓励发展的内外资项目确认书的请示》目录下的 电子文件 资源</span>
+            </p>
+          </div>
+          <div class="runtimelog-list-item">
+            <i class="icon-runtimeicontick"></i>
+            <p>
+              <b class="runtime-date">01-12</b>
+              <b class="runtime-time">13:01:59</b>
+              <span>合肥市 新增 《安徽省发展改革委关于xx项目办理国家鼓励发展的内外资项目确认书的请示》目录下的 电子文件 资源</span>
+            </p>
+          </div>
+          <div class="runtimelog-list-item">
+            <i class="icon-runtimeicontick"></i>
+            <p>
+              <b class="runtime-date">01-12</b>
+              <b class="runtime-time">13:01:59</b>
+              <span>合肥市 新增 《安徽省发展改革委关于xx项目办理国家鼓励发展的内外资项目确认书的请示》目录下的 电子文件 资源</span>
+            </p>
+          </div>
+          <div class="runtimelog-list-item">
+            <i class="icon-runtimeicontick"></i>
+            <p>
+              <b class="runtime-date">01-12</b>
+              <b class="runtime-time">13:01:59</b>
+              <span>合肥市 新增 《安徽省发展改革委关于xx项目办理国家鼓励发展的内外资项目确认书的请示》目录下的 电子文件 资源</span>
+            </p>
+          </div>
+          <div class="runtimelog-list-item">
+            <i class="icon-runtimeicontick"></i>
+            <p>
+              <b class="runtime-date">01-12</b>
+              <b class="runtime-time">13:01:59</b>
+              <span>合肥市 新增 《安徽省发展改革委关于xx项目办理国家鼓励发展的内外资项目确认书的请示》目录下的 电子文件 资源</span>
+            </p>
+          </div>
+          <div class="runtimelog-list-item">
+            <i class="icon-runtimeicontick"></i>
+            <p>
+              <b class="runtime-date">01-12</b>
+              <b class="runtime-time">13:01:59</b>
+              <span>合肥市 新增 《安徽省发展改革委关于xx项目办理国家鼓励发展的内外资项目确认书的请示》目录下的 电子文件 资源</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--center-right-area-->
+  <div class="center-control-rightbar">
+    <!--right-provincial-->
+    <div class="center-right-provincial">
+        <h4>省直</h4>
+        <div class="center-right-descriptive"><span>资源使用总次数</span><b>18,000</b><i>次</i></div>
+        <!--progressbar-->
+        <div class="center-right-progressbar">
+          <div class="center-right-progressbarred">
+            <div class="center-right-progressbargreen">15,000次</div>
+            <b>3,000次</b>
+          </div>
+       </div>
+       <!--right-content-->
+       <div class="center-right-content-wrap">
+          <div class="center-right-content">
+            <p>数据库表</p>
+            <div class="center-right-content-item">
+              <div class="center-content-item-datachange">
+                <i class="right-icon icon-datachange"></i>
+                <h5>数据交换<br><span><b>50</b>万次</span></h5>
+              </div>
+              <div class="center-content-item-structdata">
+                <i class="right-icon icon-structdata"></i>
+                <h5>结构化数据<br><span><b>1,600</b>条</span></h5>
+              </div>
+            </div>
+            <div class="center-right-emoticon">
+              <span class="emoticonsuccess">
+                <i class="icon-emoticonsuccess"></i>
+                <b>30万次</b>
+              </span>
+              <span class="emoticonfail">
+                <i class="icon-emoticonfail"></i>
+                <b>30万次</b>
+              </span>
+            </div>
+          </div>
+          <div class="center-right-content">
+            <p>文件</p>
+            <div class="center-right-content-item">
+              <div class="center-content-item-datachange">
+                <i class="right-icon icon-filechange"></i>
+                <h5>文件交换<br><span><b>5,500</b>次</span></h5>
+              </div>
+              <div class="center-content-item-structdata">
+                <i class="right-icon icon-unstructedata"></i>
+                <h5>非结构化数据<br><span><b>60</b>GB</span></h5>
+              </div>
+            </div>
+             <div class="center-right-emoticon">
+              <span class="emoticonsuccess">
+                <i class="icon-emoticonsuccess"></i>
+                <b>3000次</b>
+              </span>
+              <span class="emoticonfail">
+                <i class="icon-emoticonfail"></i>
+                <b>2500次</b>
+              </span>
+            </div>
+          </div>
+          <div class="center-right-content">
+            <p></p>
+            <div class="center-right-content-item">
+              <div class="center-content-item-datachange">
+                <i class="right-icon icon-filedownload"></i>
+                <h5>文件下载<br><span><b>7000</b>次</span></h5>
+              </div>
+              <div class="center-content-item-structdata">
+                <i class="right-icon icon-unstructedata"></i>
+                <h5>非结构化数据<br><span><b>60</b>GB</span></h5>
+              </div>
+            </div>
+            <div class="center-right-emoticon">
+              <span class="emoticonsuccess">
+                <i class="icon-emoticonsuccess"></i>
+                <b>6000次</b>
+              </span>
+              <span class="emoticonfail">
+                <i class="icon-emoticonfail"></i>
+                <b>1000次</b>
+              </span>
+            </div>
+          </div>
+          <div class="center-right-content">
+            <p>服务</p>
+            <div class="center-right-content-item">
+              <div class="center-content-item-datachange">
+                <i class="right-icon icon-serviceuse"></i>
+                <h5>服务调用<br><span><b>4000</b>次</span></h5>
+              </div>
+            </div>
+             <div class="center-right-emoticon">
+              <span class="emoticonsuccess">
+                <i class="icon-emoticonsuccess"></i>
+                <b>3000次</b>
+              </span>
+              <span class="emoticonfail">
+                <i class="icon-emoticonfail"></i>
+                <b>1000次</b>
+              </span>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--right-city-->
+    <div class="center-right-city">
+        <h4>地市</h4>
+        <div class="center-right-descriptive"><span>资源使用总次数</span><b>18,000</b><i>次</i></div>
+        <!--progressbar-->
+        <div class="center-right-progressbar">
+          <div class="center-right-progressbarred">
+            <div class="center-right-progressbargreen">15,000次</div>
+            <b>3,000次</b>
+          </div>
+        </div>
+        <!--city-content-->
+        <div class="center-right-content-wrap">
+           <div class="center-right-content">
+            <p>数据库表</p>
+            <div class="center-right-content-item">
+              <div class="center-content-item-datachange">
+                <i class="right-icon icon-datachange"></i>
+                <h5>数据交换<br><span><b>50</b>万次</span></h5>
+                
+              </div>
+              <div class="center-content-item-structdata">
+                <i class="right-icon icon-structdata"></i>
+                <h5>结构化数据<br><span><b>1,600</b>条</span></h5>
+                
+              </div>
+            </div>
+            <div class="center-right-emoticon">
+              <span class="emoticonsuccess">
+                <i class="icon-emoticonsuccess"></i>
+                <b>30万次</b>
+              </span>
+              <span class="emoticonfail">
+                <i class="icon-emoticonfail"></i>
+                <b>20万次</b>
+              </span>
+            </div>
+          </div>
+          <div class="center-right-content">
+            <p>文件</p>
+            <div class="center-right-content-item">
+              <div class="center-content-item-datachange">
+                <i class="right-icon icon-filechange"></i>
+                <h5>文件交换<br><span><b>5,500</b>次</span></h5>
+                
+              </div>
+              <div class="center-content-item-structdata">
+                <i class="right-icon icon-unstructedata"></i>
+                <h5>非结构化数据<br><span><b>60</b>GB</span></h5>
+                
+              </div>
+            </div>
+             <div class="center-right-emoticon">
+              <span class="emoticonsuccess">
+                <i class="icon-emoticonsuccess"></i>
+                <b>3000次</b>
+              </span>
+              <span class="emoticonfail">
+                <i class="icon-emoticonfail"></i>
+                <b>2500次</b>
+              </span>
+            </div>
+          </div>
+          <div class="center-right-content">
+            <p></p>
+            <div class="center-right-content-item">
+              <div class="center-content-item-datachange">
+                <i class="right-icon icon-filedownload"></i>
+                <h5>文件下载<br><span><b>7000</b>次</span></h5>
+                
+              </div>
+              <div class="center-content-item-structdata">
+                <i class="right-icon icon-unstructedata"></i>
+                <h5>非结构化数据<br><span><b>60</b>GB</span></h5>
+                
+              </div>
+            </div>
+            <div class="center-right-emoticon">
+              <span class="emoticonsuccess">
+                <i class="icon-emoticonsuccess"></i>
+                <b>6000次</b>
+              </span>
+              <span class="emoticonfail">
+                <i class="icon-emoticonfail"></i>
+                <b>1000次</b>
+              </span>
+            </div>
+          </div>
+          <div class="center-right-content">
+            <p>服务</p>
+            <div class="center-right-content-item">
+              <div class="center-content-item-datachange">
+                <i class="right-icon icon-serviceuse"></i>
+                <h5>服务调用<br><span><b>4000</b>次</span></h5>
+              </div>
+            </div>
+            <div class="center-right-emoticon">
+              <span class="emoticonsuccess">
+                <i class="icon-emoticonsuccess"></i>
+                <b>3000次</b>
+              </span>
+              <span class="emoticonfail">
+                <i class="icon-emoticonfail"></i>
+                <b>1000次</b>
+              </span>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

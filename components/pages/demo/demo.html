@@ -1,0 +1,19 @@
+<div class="dashboard">
+  <p>当前页面：DEMO</p>
+  <h1>Hello，DEMO!<span data-bind="text: data.demoName"></span></h1>
+  <input type="checkbox" data-bind="click: event.demoaClick"> 全选
+  <input type="checkbox"> 旅游 <input type="checkbox"> 看书 <input type="checkbox"> 编程 
+  <!--<button id="demo-a" data-bind="click: event.demoaClick" class="btn btn-primary">点击选中复选框</button>-->
+  <br>
+  <list data-bind="source: data.arrlists">
+     <div class="list-item" data-bind="click: event.getIndexClick">
+         <span>{{name}}</span>
+     </div>
+  </list>
+  <div id="newWrap" class="wrap"></div>
+  <div id="foo" class="wrap">foo</div>
+  <div class="wrap">jeep</div>
+  <div id="num" class="wrap">9</div>
+  <img src="favorite.png" alt="收藏">
+  <button>点击测试获取事件</button>
+</div>

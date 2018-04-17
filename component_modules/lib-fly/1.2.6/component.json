@@ -1,0 +1,8 @@
+{
+  "name": "fly",
+  "version": "1.2.6",
+  "description": "讯飞前端开发框架",
+  "main": "fly.js",
+  "files": [],
+  "dependencies": {}
+}

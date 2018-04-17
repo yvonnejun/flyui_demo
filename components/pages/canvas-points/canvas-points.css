@@ -1,0 +1,12 @@
+/*
+*page: center-operation
+*author: junyang9
+*createDate: 2018-03-1
+*/
+
+.canvas-particles-wrap {
+    width: 1920px;
+    height: 1080px;
+    background: url('img/viewbg.png') no-repeat left top;
+    position: relative;
+}

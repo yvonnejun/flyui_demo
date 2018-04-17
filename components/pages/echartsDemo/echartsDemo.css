@@ -1,0 +1,22 @@
+.classA {
+    display: block;
+    width: 200px;
+    height:100px;
+    background: pink;
+}
+.classB {
+    border: 1px solid #ddd;
+}
+.wrap {
+    width:100%;
+    min-height:150px;
+    border:1px solid #ddd;
+    padding: 10px;
+}
+#demo1 {
+    height: 513px;
+    width: 379px;
+    border: 1px solid #2a5075;
+    background: #223953!important;
+    padding: 10px;
+}

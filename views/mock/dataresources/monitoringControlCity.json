@@ -1,0 +1,16 @@
+[
+    {"cityName":"宣城", "dateTotalNum":"1.4", "dateNum":"1.2"},
+    {"cityName":"濮阳", "dateTotalNum":"1.7", "dateNum":"1.5"},
+    {"cityName":"铜陵", "dateTotalNum":"1.9", "dateNum":"1.6"},
+    {"cityName":"六安", "dateTotalNum":"2.0", "dateNum":"1.8"},
+    {"cityName":"淮北", "dateTotalNum":"2.1", "dateNum":"1.9"},
+    {"cityName":"黄山", "dateTotalNum":"3.4", "dateNum":"2.1"},
+    {"cityName":"蚌搥", "dateTotalNum":"3.7", "dateNum":"3.4"},
+    {"cityName":"宿州", "dateTotalNum":"4.2", "dateNum":"3.6"},
+    {"cityName":"安庆", "dateTotalNum":"5.4", "dateNum":"3.8"},
+    {"cityName":"淮南", "dateTotalNum":"6.8", "dateNum":"3.9"},
+    {"cityName":"毫州", "dateTotalNum":"7.2", "dateNum":"4.0"},
+    {"cityName":"马鞍山", "dateTotalNum":"7.2", "dateNum":"4.4"},
+    {"cityName":"合肥", "dateTotalNum":"7.4", "dateNum":"5.4"},
+    {"cityName":"芜湖", "dateTotalNum":"9.3", "dateNum":"6.3"}
+]

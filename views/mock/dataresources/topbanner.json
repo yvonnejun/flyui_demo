@@ -1,0 +1,10 @@
+[
+    {"title":"目录", "usabletxt":"可用", "usable":"5202", "totaltxt":"累计", "total":"1549"},
+    {"title":"入库量", "usabletxt":"可用", "usable":"5070", "totaltxt":"累计", "total":"1495"},
+    {"title":"文件", "usabletxt":"可用", "usable":"5037", "totaltxt":"累计", "total":"1541"},
+    {"title":"服务", "usabletxt":"可用", "usable":"5059", "totaltxt":"累计", "total":"1503"},
+    {"title":"数据表", "usabletxt":"可用", "usable":"5025", "totaltxt":"累计", "total":"1582"},
+    {"title":"交换量", "usabletxt":"今日", "usable":"5208", "totaltxt":"累计", "total":"2529"},
+    {"title":"数据中心任务数", "usabletxt":"运行中", "usable":"5173", "totaltxt":"总数", "total":"1576"},
+    {"title":"告警数", "usabletxt":"", "usable":"", "totaltxt":"", "total":"130438"}
+]

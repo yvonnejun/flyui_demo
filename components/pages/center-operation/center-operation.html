@@ -1,0 +1,399 @@
+<div class="center-operation-wrap">
+    <!--logo-->
+    <div class="center-operation-logo"></div>
+    <!--time-->
+    <div class="center-operation-timeclock">
+        <i class="icon-timeclock"></i>
+        <span class="timeclock-item" data-bind="text: options.getFullYear"></span>年
+        <span class="timeclock-item" data-bind="text: options.getMonth"></span>月
+        <span class="timeclock-item" data-bind="text: options.getDate"></span>日
+        <span class="timeclock-item-time" data-bind="text: options.getTime"></span>
+        <span class="timeclock-item-time" data-bind="text: options.getWeek"></span>
+    </div>
+    <!--topbar-->
+    <div class="center-operation-topbar" >
+        <div class="topbar-item" >
+            <i class="item-icon icon-dir"></i>
+            <span class="item-title" data-bind="text:options.itemDir.title"></span>
+            <div class="item-content">
+                <span class="content-text-green">
+                    <b data-bind="text:options.itemDir.usabletxt"></b>
+                    <b class="text-green">
+                        <em data-bind="text:options.itemDir.usable"></em>
+                    </b>
+                </span>
+                <span class="content-text-blue">
+                    <b data-bind="text:options.itemDir.totaltxt"></b>
+                    <b class="text-blue">
+                        <em data-bind="text:options.itemDir.total"></em>
+                    </b>
+                </span>
+            </div>
+        </div>
+        <div class="topbar-item">
+            <i class="item-icon icon-rukuliang"></i>
+            <span class="item-title" data-bind="text:options.itemScheduled.title"></span>
+            <div class="item-content">
+                <span class="content-text-green">
+                    <b data-bind="text:options.itemScheduled.usabletxt"></b>
+                    <b class="text-green">
+                        <em data-bind="text:options.itemScheduled.usable"></em>
+                    </b>
+                </span>
+                <span class="content-text-blue">
+                    <b data-bind="text:options.itemScheduled.totaltxt"></b>
+                    <b class="text-blue">
+                        <em data-bind="text:options.itemScheduled.total"></em>
+                    </b>
+                </span>
+            </div>
+        </div>
+        <div class="topbar-item-center">
+            <div class="item-center-context">
+                <i class="item-icon icon-file"></i>
+                <span class="item-title" data-bind="text:options.itemFile.title"></span>
+                <div class="item-content">
+                   <span class="content-text-green">
+                        <b data-bind="text:options.itemFile.usabletxt"></b>
+                        <b class="text-green">
+                            <em data-bind="text:options.itemFile.usable"></em>
+                        </b>
+                    </span>
+                    <span class="content-text-blue">
+                        <b data-bind="text:options.itemFile.totaltxt"></b>
+                        <b class="text-blue">
+                            <em data-bind="text:options.itemFile.total"></em>
+                        </b>
+                    </span>
+                </div>
+            </div>
+
+            <div class="item-center-context">
+                <i class="item-icon icon-service"></i>
+                <span class="item-title" data-bind="text:options.itemService.title"></span>
+                <div class="item-content">
+                    <span class="content-text-green">
+                        <b data-bind="text:options.itemService.usabletxt"></b>
+                        <b class="text-green">
+                            <em data-bind="text:options.itemService.usable"></em>
+                        </b>
+                    </span>
+                    <span class="content-text-blue">
+                        <b data-bind="text:options.itemService.totaltxt"></b>
+                        <b class="text-blue">
+                            <em data-bind="text:options.itemService.total"></em>
+                        </b>
+                    </span>
+                </div>
+            </div>
+
+            <div class="item-center-context">
+                <i class="item-icon icon-datatable"></i>
+                <span class="item-title" data-bind="text:options.itemDataTable.title"></span>
+                <div class="item-content">
+                    <span class="content-text-green">
+                        <b data-bind="text:options.itemDataTable.usabletxt"></b>
+                        <b class="text-green">
+                            <em data-bind="text:options.itemDataTable.usable"></em>
+                        </b>
+                    </span>
+                    <span class="content-text-blue">
+                        <b data-bind="text:options.itemDataTable.totaltxt"></b>
+                        <b class="text-blue">
+                            <em data-bind="text:options.itemDataTable.total"></em>
+                        </b>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="topbar-item">
+            <i class="item-icon icon-change"></i>
+            <span class="item-title" data-bind="text:options.itemChangeNum.title"></span>
+            <div class="item-content">
+                <span class="content-text-green">
+                    <b data-bind="text:options.itemChangeNum.usabletxt"></b>
+                    <b class="text-green">
+                        <em data-bind="text:options.itemChangeNum.usable"></em>
+                    </b>
+                </span>
+                <span class="content-text-blue">
+                    <b data-bind="text:options.itemChangeNum.totaltxt"></b>
+                    <b class="text-blue">
+                        <em data-bind="text:options.itemChangeNum.total"></em>
+                    </b>
+                </span>
+            </div>
+        </div>
+        <div class="topbar-item">
+            <i class="item-icon icon-task"></i>
+            <span class="item-title" data-bind="text:options.itemTask.title"></span>
+            <div class="item-content">
+                <span class="content-text-green">
+                    <b data-bind="text:options.itemTask.usabletxt"></b>
+                    <b class="text-green">
+                        <em data-bind="text:options.itemTask.usable"></em>
+                    </b>
+                </span>
+                <span class="content-text-blue">
+                    <b data-bind="text:options.itemTask.totaltxt"></b>
+                    <b class="text-blue">
+                        <em data-bind="text:options.itemTask.total"></em>
+                    </b>
+                </span>
+            </div>
+        </div>
+        <div class="topbar-item-alarm">
+            <i class="item-icon icon-alarmbell"></i>
+            <span class="item-title" data-bind="text:options.itemAlarm.title"></span>
+            <div class="item-content">
+                <span><b class="text-orange" data-bind="text:options.itemAlarm.total"></b></span>
+                <!--<span>累计<b class="text-blue">1,493</b></span>-->
+            </div>
+        </div>
+    </div>
+    <!--leftbar-->
+    <div class="center-operation-leftbar">
+        <div class="alarm-info-wrap">
+            <h1 class="area-title">告警信息</h1>
+            <list data-bind="source:options.alarmInfoData">
+                <div class="alarm-info-list-item">
+                    <i class="item-icon icon-alarminfo"></i>
+                    <span class="list-item-text" data-bind="text:alarmInfoContent"></span>
+                    <b>
+                        <span data-bind="text:alarmInfoDate"></span>
+                        <span data-bind="text:alarmInfoTime"></span>
+                    </b>
+                </div>
+            </list>
+        </div>
+        <div class="city-control-wrap">
+            <h1 class="area-title">地市监控</h1>
+            <div id="cityControlECharts">
+
+            </div>
+        </div>
+    </div>
+
+    <!--main-area-->
+    <div class="center-operation-main">
+        <div class="center-operation-main-platform city-platform"></div>
+        <div class="center-operation-main-city">
+            <div class="main-city-item sz-pos">
+                <img src="img/redball.png" width="23" height="22" alt="宿州市" title="宿州市">
+            </div>
+            <div class="main-city-item hb-pos">
+                <img src="img/greenball.png" width="23" height="22" alt="淮北市" title="淮北市">
+            </div>
+            <div class="main-city-item hz-pos">
+                <img src="img/greenball.png" width="23" height="22" alt="毫州市" title="毫州市">
+            </div>
+
+            <div class="main-city-item cz-pos">
+                <img src="img/greenball.png" width="23" height="22" alt="滁州市" title="滁州市">
+            </div>
+            <div class="main-city-item fb-pos">
+                <img src="img/redball.png" width="23" height="22" alt="蚌埠市" title="蚌埠市">
+            </div>
+            <div class="main-city-item hn-pos">
+                <img src="img/greenball.png" width="23" height="22" alt="淮南市" title="淮南市">
+            </div>
+            <div class="main-city-item fy-pos">
+                <img src="img/greenball.png" width="23" height="22" alt="阜阳市" title="阜阳市">
+            </div>
+
+             <div class="main-city-item mas-pos">
+                <img src="img/redball.png" width="23" height="22" alt="马鞍山市" title="马鞍山市">
+            </div>
+            <div class="main-city-item hf-pos">
+                <img src="img/greenball.png" width="23" height="22" alt="合肥市" title="合肥市">
+            </div>
+            <div class="main-city-item la-pos">
+                <img src="img/greenball.png" width="23" height="22" alt="六安市" title="六安市">
+            </div>
+
+            <div class="main-city-item xc-pos">
+                <img src="img/greenball.png" width="23" height="22" alt="宣城市" title="宣城市">
+            </div>
+            <div class="main-city-item wh-pos">
+                <img src="img/greenball.png" width="23" height="22" alt="芜湖市" title="芜湖市">
+            </div>
+            <div class="main-city-item tl-pos">
+                <img src="img/greenball.png" width="23" height="22" alt="铜陵市" title="铜陵市">
+            </div>
+            <div class="main-city-item aq-pos">
+                <img src="img/greenball.png" width="23" height="22" alt="安庆市" title="安庆市">
+            </div>
+
+            <div class="main-city-item hs-pos">
+                <img src="img/redball.png" width="23" height="22" alt="黄山市" title="黄山市">
+            </div>
+            <div class="main-city-item chiz-pos">
+                <img src="img/greenball.png" width="23" height="22" alt="池州市" title="池州市">
+            </div>
+        </div>
+        <div class="center-operation-main-platform datacenter-platform"></div>
+        <div class="center-operation-main-datacenter"></div>
+        <div class="center-operation-main-country"></div>
+        <div class="center-operation-main-provincialdepartment"></div>
+          <div class="center-operation-provincialdepartment-plane" style="left: 460px; top: -93px; z-index: 0;">
+            <ul>
+                <li>省气象局</li>
+                <li>省物价局</li>
+                <li>省密码管理局</li>
+                <li>省科技厅</li>
+                <li>省国家安全厅</li>
+                <li>省交通运输厅</li>
+                <li>省商务厅</li>
+                <li>省外办</li>
+                <li>省供销社</li>
+                <li>省贸促会</li>
+                <li>省烟草专卖局</li>
+                <li>省扶贫办</li>
+            </ul>
+        </div>
+          <div class="center-operation-provincialdepartment-plane" style="left: 560px; top: -48px; z-index: 0;">
+            <ul>
+                <li>省气象局</li>
+                <li>省物价局</li>
+                <li>省密码管理局</li>
+                <li>省科技厅</li>
+                <li>省国家安全厅</li>
+                <li>省交通运输厅</li>
+                <li>省商务厅</li>
+                <li>省外办</li>
+                <li>省供销社</li>
+                <li>省贸促会</li>
+                <li>省烟草专卖局</li>
+                <li>省扶贫办</li>
+            </ul>
+        </div>
+          <div class="center-operation-provincialdepartment-plane" style="left: 660px; top: -3px; z-index: 0;">
+            <ul>
+                <li>省气象局</li>
+                <li>省物价局</li>
+                <li>省密码管理局</li>
+                <li>省科技厅</li>
+                <li>省国家安全厅</li>
+                <li>省交通运输厅</li>
+                <li>省商务厅</li>
+                <li>省外办</li>
+                <li>省供销社</li>
+                <li>省贸促会</li>
+                <li>省烟草专卖局</li>
+                <li>省扶贫办</li>
+            </ul>
+        </div>
+          <div class="center-operation-provincialdepartment-plane" style="left: 760px; top: 42px; z-index: 0;">
+            <ul>
+                <li>省气象局</li>
+                <li>省物价局</li>
+                <li>省密码管理局</li>
+                <li>省科技厅</li>
+                <li>省国家安全厅</li>
+                <li>省交通运输厅</li>
+                <li>省商务厅</li>
+                <li>省外办</li>
+                <li>省供销社</li>
+                <li>省贸促会</li>
+                <li>省烟草专卖局</li>
+                <li>省扶贫办</li>
+            </ul>
+        </div>
+        <div class="center-operation-provincialdepartment-plane">
+            <ul>
+                <li>省气象局</li>
+                <li>省物价局</li>
+                <li>省密码管理局</li>
+                <li>省科技厅</li>
+                <li>省国家安全厅</li>
+                <li>省交通运输厅</li>
+                <li>省商务厅</li>
+                <li>省外办</li>
+                <li>省供销社</li>
+                <li>省贸促会</li>
+                <li>省烟草专卖局</li>
+                <li>省扶贫办</li>
+            </ul>
+        </div>
+        <div class="center-operation-main-mainruntimecontrol">
+            <div class="runtimelog-wrap">
+                <div class="runtimelog-list">
+                    <div class="runtimelog-list-title">
+                        <ul>
+                            <li>交换时间</li>
+                            <li>来源</li>
+                            <li>目标</li>
+                            <li>数据类型</li>
+                            <li>数据量</li>
+                        </ul>
+                    </div>
+                    <list data-bind="source:options.runtimeResourceData">
+                        <div class="runtimelog-list-item">
+                            <div class="runtimelog-list-item-context">
+                                <p>
+                                    <b class="runtime-date" data-bind="text:runtimeDate"></b>
+                                    <b class="runtime-time" data-bind="text:runtimeTime"></b>
+                                    <span data-bind="text:runtimeResource"></span>
+                                    <span data-bind="text:runtimeTarget"></span>
+                                    <span data-bind="text:runtimeType"></span>
+                                    <span data-bind="text:runtimeDataNum"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </list>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--rightbar-->
+    <div class="center-operation-rightbar">
+        <div class="national-report-info-wrap">
+            <h1 class="area-title national-title">上报国家信息统计</h1>
+            <div class="national-report-info-item item-catalogbg">
+                <h2>目录数</h2>
+                <span>21,569</span>
+            </div>
+            <div class="national-report-info-item item-resourcebg">
+                <h2>资源量</h2>
+                <span>11,286</span>
+            </div>
+        </div>
+        <div class="data-center-wrap">
+            <h1 class="area-title data-center-title">数据中心监控</h1>
+            <div id="centerOperationPie1">
+
+            </div>
+            <div id="centerOperationPie2">
+
+            </div>
+            <div class="datacenter_item_context">
+                <div class="datacenter_item">
+                    <h2>1,650</h2>
+                    <b class="text-blue2">+5.4%</b>
+                    <span>本月换入</span>
+                </div>
+                <div class="datacenter_item">
+                    <h2>1,540</h2>
+                    <b class="text-orange2">-5.4%</b>
+                    <span>本月换出</span>
+                </div>
+                <div class="datacenter_item">
+                    <h2>1,250</h2>
+                    <span>累计换入</span>
+                </div>
+                <div class="datacenter_item">
+                    <h2>1,110</h2>
+                    <span>累计换出</span>
+                </div>
+            </div>
+        </div>
+        <div class="provincialdepartment-info-wrap">
+            <h1 class="area-title provincialdepartment-title">省直部门交换量</h1>
+            <div id="proDepartmentChangeNumEcharts">
+
+            </div>
+            <div class="legendbg"></div>
+        </div>
+    </div>
+</div>

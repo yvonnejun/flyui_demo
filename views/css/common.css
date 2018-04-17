@@ -1,0 +1,203 @@
+
+body {
+    background-color: #f0f0f0;
+}
+/*
+ *common
+ */
+.text-green {
+    color: #5eb22b;
+    font-weight: bold;
+}
+.text-blue {
+    color: #2ed3dd;
+    font-weight: bold;
+}
+.text-orange {
+    color: #f17443;
+    font-weight: bold;
+    
+}
+.text-blue2 {
+    color: #27a7bc;
+}
+.text-orange2 {
+    color: #de7850;
+}
+.mar-r14 {
+    margin-right: 14px;
+}
+.area-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: -4px;
+    left: 8px;
+    font-family: '΢���ź�';
+}
+
+.commontxt {
+    color: #fff!important;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+.tiptxt {
+    color: #fff!important;
+    margin-left: 18px;
+    width: 42px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    background:linear-gradient(top, #00e9a8, #1dae26); 
+    background:-moz-linear-gradient(top, #00e9a8, #1dae26);
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#00e9a8), to(#1dae26)); 
+}
+.tiptxtred {
+    background:linear-gradient(top, #ee684c, #fc563f); 
+    background:-moz-linear-gradient(top, #ee684c, #fc563f);
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(#ee684c), to(#fc563f)); 
+}
+.pos-vcenter {
+    padding-top: 19px!important;
+}
+/*icons*/
+.timeclock-icon {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url('/public/project-a/1.0.0/img/icon/timeclock.png') no-repeat left top;
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+}
+.item-icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    margin-right: 3px;
+}
+.icon-dir {
+    background: url('/public/project-a/1.0.0/img/icon/dir.png') no-repeat left top;
+}
+.icon-rukuliang {
+    background: url('/public/project-a/1.0.0/img/icon/rukuliang.png') no-repeat left top;
+}
+.icon-change {
+    background: url('/public/project-a/1.0.0/img/icon/change.png') no-repeat left top;
+}
+.icon-task {
+    background: url('/public/project-a/1.0.0/img/icon/task.png') no-repeat left top;
+}
+.icon-alarminfo {
+    top: 5px;
+    background: url('/public/project-a/1.0.0/img/icon/alarminfo.png') no-repeat left top;
+}
+.icon-file {
+    width: 16px;
+    height: 12px;
+    background: url('/public/project-a/1.0.0/img/icon/file.png') no-repeat left top;
+    position: relative;
+    top: -4px;
+    left: 3px;
+}
+.icon-service {
+    width: 15px;
+    height: 15px;
+    background: url('/public/project-a/1.0.0/img/icon/service.png') no-repeat left top;
+}
+.icon-datatable {
+    width: 15px;
+    height: 15px;
+    background: url('/public/project-a/1.0.0/img/icon/datatable.png') no-repeat left top;
+}
+.icon-alarmbell {
+    width: 66px;
+    height: 65px;
+    background: url('/public/project-a/1.0.0/img/icon/alarmbell.png') no-repeat left top;
+    position: absolute;
+    top: 20px;
+    left: 28px;
+}
+
+
+.right-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    margin-right: 3px;
+    top: 5px;
+}
+.icon-datachange {
+    background: url('/public/project-a/1.0.0/img/icon/datachange.png') no-repeat left top;
+}
+.icon-structdata {
+    background: url('/public/project-a/1.0.0/img/icon/structdata.png') no-repeat left top;
+}
+.icon-filechange {
+    background: url('/public/project-a/1.0.0/img/icon/filechange.png') no-repeat left top;
+}
+.icon-unstructedata {
+    background: url('/public/project-a/1.0.0/img/icon/unstructedata.png') no-repeat left top;
+}
+.icon-filedownload {
+    background: url('/public/project-a/1.0.0/img/icon/filedownload.png') no-repeat left top;
+}
+.icon-serviceuse {
+    background: url('/public/project-a/1.0.0/img/icon/serviceuse.png') no-repeat left top;
+}
+.icon-emoticonsuccess, .icon-emoticonfail {
+    width: 12px;
+    height: 12px;
+    background: url('/public/project-a/1.0.0/img/icon/emoticonsuccess.png') no-repeat left top;
+    display: inline-block;
+    position: relative;
+    margin-right: 2px;
+    top: 1px;
+}
+.icon-emoticonfail {
+    background: url('/public/project-a/1.0.0/img/icon/emoticonfail.png') no-repeat left top;
+}
+.icon-runtimeicontick, .icon-runtimeiconalarm2, .icon-runtimeiconalarm1 {
+    width: 18px;
+    height: 18px;
+    background: url('/public/project-a/1.0.0/img/icon/runtimeicontick.png') no-repeat left top;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    left: 10px;
+}
+.icon-runtimeiconalarm2 {
+    background: url('/public/project-a/1.0.0/img/icon/runtimeiconalarm2.png') no-repeat left top;
+}
+.icon-runtimeiconalarm1 {
+    background: url('/public/project-a/1.0.0/img/icon/runtimeiconalarm1.png') no-repeat left top;
+}
+.icon-databasetable, .icon-databaseservice, .icon-databasefile {
+    display: inline-block;
+    margin-right: 18px;
+    position:relative;
+    top: 10px;
+    left: 15px;
+}
+.icon-databasetable {
+    width: 14px;
+    height: 15px;
+    background: url('/public/project-a/1.0.0/img/icon/databasetable.png') no-repeat left top;
+}
+.icon-databaseservice {
+    width: 15px;
+    height: 15px;
+    background: url('/public/project-a/1.0.0/img/icon/databaseservice.png') no-repeat left top;
+}
+.icon-databasefile {
+    width: 15px;
+    height: 12px;
+    background: url('/public/project-a/1.0.0/img/icon/databasefile.png') no-repeat left top;
+    top: 7px;
+}

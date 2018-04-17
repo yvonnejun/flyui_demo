@@ -1,0 +1,14 @@
+.classA {
+    display: block;
+    width: 200px;
+    height:100px;
+    background: pink;
+}
+.classB {
+    border: 1px solid #ddd;
+}
+.wrap {
+    width:100%;
+    height:150px;
+    border:1px solid #ddd
+}

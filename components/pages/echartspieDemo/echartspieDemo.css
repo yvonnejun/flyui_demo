@@ -1,0 +1,22 @@
+.classA {
+    display: block;
+    width: 200px;
+    height:100px;
+    background: pink;
+}
+.classB {
+    border: 1px solid #ddd;
+}
+.wrap {
+    width:100%;
+    min-height:150px;
+    border:1px solid #ddd;
+    padding: 10px;
+}
+#pie1, #pie2 {
+    height: 104px;
+    width: 186px;
+    background: #223953!important;
+    display: inline-block;
+    /*padding: 10px;*/
+}

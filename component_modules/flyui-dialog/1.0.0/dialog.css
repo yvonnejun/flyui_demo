@@ -1,0 +1,445 @@
+.dialog {
+    position: relative;
+    background-color: #FFF;
+    border: 1px solid #999;
+    border-radius: 4px;
+    outline: 0;
+    background-clip: padding-box;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    opacity: 0;
+    transform: scale(0);
+    transition: transform .15s ease-in-out, opacity .15s ease-in-out;
+}
+
+.popup-show .dialog {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup-focus .dialog {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup-modal .dialog {
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-grid {
+    width: auto;
+    margin: 0;
+    border: 0 none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: transparent;
+}
+
+.dialog-header,
+.dialog-body,
+.dialog-footer {
+    padding: 0;
+    border: 0 none;
+    text-align: left;
+    background: transparent;
+}
+
+.dialog-header {
+    white-space: nowrap;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.dialog-close {
+    position: relative;
+    float: right;
+    top: 8px;
+    right: 10px;
+    padding: 0 4px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #FFF;
+    opacity: .2;
+    filter: alpha(opacity=20);
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+}
+
+.dialog-close:hover,
+.dialog-close:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.dialog-title {
+    margin: 0;
+    line-height: 1.428571429;
+    min-height: 16.428571429px;
+    padding: 10px 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    cursor: default;
+}
+
+.dialog-body {
+    padding: 20px;
+    text-align: center;
+    overflow: auto;
+}
+
+.dialog-content {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    *zoom: 1;
+    *display: inline;
+    text-align: left;
+}
+
+.dialog-footer {
+    padding: 0 15px 15px 15px;
+}
+
+.dialog-statusbar {
+    float: left;
+    margin-right: 20px;
+    padding: 6px 0;
+    line-height: 1.428571429;
+    font-size: 14px;
+    color: #888;
+    white-space: nowrap;
+}
+
+.dialog-statusbar label:hover {
+    color: #333;
+}
+
+.dialog-statusbar input,
+.dialog-statusbar .label {
+    vertical-align: middle;
+}
+
+.dialog-button {
+    float: right;
+    white-space: nowrap;
+}
+
+.dialog-footer button+button {
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.dialog-footer button {
+    width: auto;
+    overflow: visible;
+    display: inline-block;
+    padding: 6px 12px;
+    _margin-left: 5px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.dialog-footer button:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.dialog-footer button:hover,
+.dialog-footer button:focus {
+    color: #333333;
+    text-decoration: none;
+}
+
+.dialog-footer button:active {
+    background-image: none;
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.dialog-footer button[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    box-shadow: none;
+}
+
+.dialog-footer button {
+    color: #333333;
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+
+.dialog-footer button:hover,
+.dialog-footer button:focus,
+.dialog-footer button:active {
+    color: #333333;
+    background-color: #ebebeb;
+    border-color: #adadad;
+}
+
+.dialog-footer button:active {
+    background-image: none;
+}
+
+.dialog-footer button[disabled],
+.dialog-footer button[disabled]:hover,
+.dialog-footer button[disabled]:focus,
+.dialog-footer button[disabled]:active {
+    background-color: #ffffff;
+    border-color: #cccccc;
+}
+
+.dialog-footer button.dialog-autofocus {
+    color: #ffffff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+
+.dialog-footer button.dialog-autofocus:hover,
+.dialog-footer button.dialog-autofocus:focus,
+.dialog-footer button.dialog-autofocus:active {
+    color: #ffffff;
+    background-color: #3276b1;
+    border-color: #285e8e;
+}
+
+.dialog-footer button.dialog-autofocus:active {
+    background-image: none;
+}
+
+.popup-top-left .dialog,
+.popup-top .dialog,
+.popup-top-right .dialog {
+    top: -8px;
+}
+
+.popup-bottom-left .dialog,
+.popup-bottom .dialog,
+.popup-bottom-right .dialog {
+    top: 8px;
+}
+
+.popup-left-top .dialog,
+.popup-left .dialog,
+.popup-left-bottom .dialog {
+    left: -8px;
+}
+
+.popup-right-top .dialog,
+.popup-right .dialog,
+.popup-right-bottom .dialog {
+    left: 8px;
+}
+
+.dialog-arrow-a,
+.dialog-arrow-b {
+    position: absolute;
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    _color: #FF3FFF;
+    _filter: chroma(color=#FF3FFF);
+    border: 8px dashed transparent;
+}
+
+.popup-follow .dialog-arrow-a,
+.popup-follow .dialog-arrow-b {
+    display: block;
+}
+
+.popup-top-left .dialog-arrow-a,
+.popup-top .dialog-arrow-a,
+.popup-top-right .dialog-arrow-a {
+    bottom: -16px;
+    border-top: 8px solid #7C7C7C;
+}
+
+.popup-top-left .dialog-arrow-b,
+.popup-top .dialog-arrow-b,
+.popup-top-right .dialog-arrow-b {
+    bottom: -15px;
+    border-top: 8px solid #fff;
+}
+
+.popup-top-left .dialog-arrow-a,
+.popup-top-left .dialog-arrow-b {
+    left: 15px;
+}
+
+.popup-top .dialog-arrow-a,
+.popup-top .dialog-arrow-b {
+    left: 50%;
+    margin-left: -8px;
+}
+
+.popup-top-right .dialog-arrow-a,
+.popup-top-right .dialog-arrow-b {
+    right: 15px;
+}
+
+.popup-bottom-left .dialog-arrow-a,
+.popup-bottom .dialog-arrow-a,
+.popup-bottom-right .dialog-arrow-a {
+    top: -16px;
+    border-bottom: 8px solid #7C7C7C;
+}
+
+.popup-bottom-left .dialog-arrow-b,
+.popup-bottom .dialog-arrow-b,
+.popup-bottom-right .dialog-arrow-b {
+    top: -15px;
+    border-bottom: 8px solid #fff;
+}
+
+.popup-bottom-left .dialog-arrow-a,
+.popup-bottom-left .dialog-arrow-b {
+    left: 15px;
+}
+
+.popup-bottom .dialog-arrow-a,
+.popup-bottom .dialog-arrow-b {
+    margin-left: -8px;
+    left: 50%;
+}
+
+.popup-bottom-right .dialog-arrow-a,
+.popup-bottom-right .dialog-arrow-b {
+    right: 15px;
+}
+
+.popup-left-top .dialog-arrow-a,
+.popup-left .dialog-arrow-a,
+.popup-left-bottom .dialog-arrow-a {
+    right: -16px;
+    border-left: 8px solid #7C7C7C;
+}
+
+.popup-left-top .dialog-arrow-b,
+.popup-left .dialog-arrow-b,
+.popup-left-bottom .dialog-arrow-b {
+    right: -15px;
+    border-left: 8px solid #fff;
+}
+
+.popup-left-top .dialog-arrow-a,
+.popup-left-top .dialog-arrow-b {
+    top: 15px;
+}
+
+.popup-left .dialog-arrow-a,
+.popup-left .dialog-arrow-b {
+    margin-top: -8px;
+    top: 50%;
+}
+
+.popup-left-bottom .dialog-arrow-a,
+.popup-left-bottom .dialog-arrow-b {
+    bottom: 15px;
+}
+
+.popup-right-top .dialog-arrow-a,
+.popup-right .dialog-arrow-a,
+.popup-right-bottom .dialog-arrow-a {
+    left: -16px;
+    border-right: 8px solid #7C7C7C;
+}
+
+.popup-right-top .dialog-arrow-b,
+.popup-right .dialog-arrow-b,
+.popup-right-bottom .dialog-arrow-b {
+    left: -15px;
+    border-right: 8px solid #fff;
+}
+
+.popup-right-top .dialog-arrow-a,
+.popup-right-top .dialog-arrow-b {
+    top: 15px;
+}
+
+.popup-right .dialog-arrow-a,
+.popup-right .dialog-arrow-b {
+    margin-top: -8px;
+    top: 50%;
+}
+
+.popup-right-bottom .dialog-arrow-a,
+.popup-right-bottom .dialog-arrow-b {
+    bottom: 15px;
+}
+
+@-webkit-keyframes dialog-loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes dialog-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.dialog-loading {
+    position: relative;
+    display: block;
+    *zoom: 1;
+    *display: inline;
+    *vertical-align: middle;
+    overflow: hidden;
+    width: 32px;
+    height: 32px;
+    top: 50%;
+    margin: -16px auto 0 auto;
+    font-size: 0;
+    text-indent: -999em;
+    color: #666;
+}
+
+.dialog-loading {
+    width: 100%\9;
+    text-indent: 0\9;
+    line-height: 32px\9;
+    text-align: center\9;
+    font-size: 12px\9;
+}
+
+.dialog-loading::after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 3px;
+    margin: 14.5px 0 0 14.5px;
+    border-radius: 100%;
+    box-shadow: 0 -10px 0 1px #ccc, 10px 0px #ccc, 0 10px #ccc, -10px 0 #ccc, -7px -7px 0 0.5px #ccc, 7px -7px 0 1.5px #ccc, 7px 7px #ccc, -7px 7px #ccc;
+    transform: rotate(360deg);
+    animation: dialog-loading 1.5s infinite linear;
+    display: none\9;
+}

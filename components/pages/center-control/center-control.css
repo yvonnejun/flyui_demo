@@ -1,0 +1,608 @@
+/*
+*author: junyang
+*/
+
+.center-control-wrap {
+    width: 1920px;
+    height: 1080px;
+    background: url('img/background/viewbg.png') no-repeat left top;
+    position: relative;
+}
+/*
+*logo
+*/
+.center-control-logo {
+    width: 866px;
+    height: 98px;
+    background: url('img/logo2.png') no-repeat left top;
+    margin: 0 auto;
+}
+/*
+*timeclock
+*/
+.center-control-timeclock {
+    color: #3875ab;
+    font-weight: bold;
+    width: 270px;
+    position: absolute;
+    right: 60px;
+    top: 44px;
+}
+.center-control-timeclock .timeclock-item{
+    margin-right: 0px;
+}
+.center-control-timeclock .timeclock-item-time {
+    margin-left: 4px;
+}
+/*
+*center-left-area
+*/
+.center-control-leftbar {
+    width: 402px;
+    min-height: 1%;
+    float: left;
+    margin-left: 20px;
+}
+.center-control-leftbar .center-resourcereport {
+    height: 665px;
+    margin-bottom: 12px;
+    background: url('img/background/resourcereportbg.png') no-repeat left top; 
+    padding-left: 9px;
+    position: relative;
+}
+.center-control-leftbar .center-resourcereport .center-resourcereport-provincial{
+    position: relative;
+    top: 0px;
+}
+.center-control-leftbar .center-resourcereport .center-resourcereport-city{
+    position: relative;
+    top: 70px;
+}
+.center-control-leftbar .center-resourcereport h4 {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: 95%;
+    top: 55px;
+    left: 12px;
+}
+.center-control-leftbar .datacenter_item_context {
+    height: 88px;
+    position: relative;
+    top: 100px;
+}
+
+.center-control-leftbar .datacenter_item_context .datacenter_item {
+    background: url('img/background/datacenter_item_bg.png') no-repeat left top;
+    width: 87px;
+    height: 86px;
+    position: relative;
+    float: left;
+    margin-left: 8px;
+
+}
+.center-control-leftbar .datacenter_item_context .datacenter_item h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.center-control-leftbar .datacenter_item_context .datacenter_item h2 i {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+}
+.center-control-leftbar .datacenter_item_context .datacenter_item b {
+    position: absolute;
+    top: 39px;
+    left: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: #34fba2;
+}
+.center-control-leftbar .datacenter_item_context .datacenter_item span {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #3ae7ff;
+    font-size: 14px;
+}
+.center-control-wrap .provincial-info-list {
+    position: relative;
+    top: 115px;
+    left: 5px;
+}
+.center-control-wrap .provincial-info-list-item {
+    width: 378px;
+    height: 46px;
+    line-height: 46px;
+    background: url('img/background/provincialitembg.png') no-repeat left top; 
+    overflow: hidden;
+    padding-left: 6px;
+}
+.center-control-wrap .provincial-info-list-item span {
+    color: #307dbf;
+}
+.center-control-wrap .provincial-info-list-item b {
+    margin-left: 0px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: normal;
+}
+.center-control-wrap .provincial-info-list-item .list-item-text {
+    width: 204px;
+    display: inline-block;
+    color: #44a5f7;
+}
+.center-control-leftbar .center_item_context {
+    height: 88px;
+    position: relative;
+    top: 100px;
+}
+
+
+.center-control-leftbar .center_item_context .center_item h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.center-control-leftbar .center_item_context .center_item h2 i {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+}
+.center-control-leftbar .center_item_context .center_item b {
+    position: absolute;
+    top: 39px;
+    left: 25px;
+    text-align: center;
+    font-size: 12px;
+    color: #34fba2;
+}
+.center-control-leftbar .center_item_context .center_item span {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #3ae7ff;
+    font-size: 14px;
+}
+
+
+.center-control-leftbar .center-nationalreport {
+    height: 277px;
+    margin-top: -8px;
+    background: url('img/background/nationalreportbg2.png') no-repeat left top; 
+    padding-left: 7px;
+    position: relative;
+}
+.center-control-leftbar .center-nationalreport .area-title {
+    position: relative;
+    top: 12px;
+    left: 10px;
+}
+.center-control-leftbar .center-nationalreport .center-resourcereport-provincial h4 {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: 88%;
+    top: 25px;
+    left: 22px;
+}
+.center-control-leftbar .center-nationalreport .center-resourcereport-provincial .center_item_context {
+    height: 88px;
+    position: relative;
+    top: 40px;
+}
+.center-control-leftbar .center-nationalreport .center-resourcereport-provincial .center_item_context .center_item {
+    background: url('img/background/dataimg.png') no-repeat left top;
+    width: 189px;
+    height: 70px;
+    position: relative;
+    float: left;
+    margin-right: 8px;
+}
+.center-control-leftbar .center-nationalreport .center-resourcereport-provincial .center_item_context .center_item p {
+    display: inline-block;
+    width: 20px;
+    height: 50px;
+    line-height: 14px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 7px 
+}
+
+.center-control-leftbar .center-nationalreport .center-resourcereport-city {
+    position: relative;
+    top: 32px;
+}
+.center-control-leftbar .center-nationalreport .center-resourcereport-city h4 {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: 88%;
+    left: 22px;
+}
+.center-control-leftbar .center-nationalreport .center-resourcereport-city .center_item_context {
+    height: 88px;
+    position: relative;
+    top: 40px;
+}
+.center-control-leftbar .center-nationalreport .center-resourcereport-city .center_item_context .center_item {
+    background: url('img/background/dataimg.png') no-repeat left top;
+    width: 189px;
+    height: 70px;
+    position: relative;
+    /*display: inline-block;*/
+    float: left;
+    margin-right: 8px;
+    position: relative;
+}
+.center-control-leftbar .center-nationalreport .center-resourcereport-city .center_item_context .center_item > p {
+    display: inline-block;
+    width: 20px;
+    height: 50px;
+    line-height: 14px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 7px 
+}
+.center_item .center_item_content {
+    width: 154px;
+    height: 70px;
+    background: transparent;
+
+    position: absolute;
+    top: 0px;
+    left: 35px;
+    z-index: 3;
+}
+.center_item .center_item_content .center_item_datachange, .center_item .center_item_content .center_item_datanum {
+    width: 50%;
+    height: 70px;
+    display: inline-block;
+    background: transparent;
+    margin-left: -3px;
+}
+.center_item_datachange h5, .center_item_datanum h5 {
+    color: #3ae7ff;
+    position: relative;
+    left: 14px;
+}
+.center_item_datachange span, .center_item_datanum span {
+    color: #fff!important;
+    position: relative!important;
+}
+.center_item_datachange b, .center_item_datanum b {
+    color: #fff!important;
+    position: relative!important;
+    top: 0!important;
+    left: 0!important;
+    font-size: 20px!important;
+    font-weight: normal;
+}
+
+
+
+
+/*
+ *center-main-area
+ */
+.center-control-wrap .center-main-area {
+     width: 1034px;
+     height: 954px;
+     position: relative;
+     top:0;
+     float: left;
+     margin: 0 15px;
+     z-index: 1;
+ }
+
+/*top-banner*/
+.center-main-area .center-main-top {
+    height: 100px;
+ }
+.center-main-area .center-main-databasetable {
+    width: 302px;
+    height: 101px;
+    float: left;
+    background: url('img/background/databasetablebg.png') no-repeat left top;
+    margin-right: 13px;
+    margin-top: -1px;
+ }
+
+ .databasetable-item-title, .databasefile-item-title, .databaseservice-item-title {
+    color: #3ae7ff;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    top: 7px;
+}
+.databasetable-item-content, .databasefile-item-content, .databaseservice-item-content {
+    color: #18e7f0;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    top: 32px;
+    left: 15px;
+}
+.databasetable-item-content span b, .databasefile-item-content > span > b, .databaseservice-item-content > span > b {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 6px;
+    margin-right: 16px;
+}
+.databasetable-item-content span b em, .databasefile-item-content > span > b > em, .databaseservice-item-content > span > b > em{
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    position: relative;
+    margin-left: 6px;
+    margin-right: 16px;
+}
+.databasefile-item-content > span {
+    margin-right: 11px;
+}
+
+
+.center-main-area .center-main-file {
+    width: 522px;
+    height: 100px;
+    float: left;
+    background: url('img/background/filebg.png') no-repeat left top;
+    margin-right: 13px;
+ }
+.center-main-area .center-main-service {
+    width: 182px;
+    height: 100px;
+    float: left;
+    background: url('img/background/servicebg.png') no-repeat left top;
+ } 
+
+/*bubblegraph*/
+#bubblegraph {
+    width: 100%;
+    height: 572px;
+    /*border: 1px solid orange;*/
+}
+
+
+/*runtimelogtable*/
+.center-main-area .center-main-bottom-runtimelogtable {
+    width: 1034px;
+    height: 280px;
+    background: url('img/background/runtimelogbg.png') no-repeat left top;
+    position: absolute;
+    bottom: -1px;
+ }
+ .runtimelog-wrap {
+     width: 97%;
+     height: 225px;
+     border: 1px solid #2e69a0;
+     background:#192e53;
+     border-radius:8px;
+     margin: 0 auto;
+     margin-top: 43px;
+ }
+ .runtimelog-list {
+     width: 98%;
+     margin: 0 auto;
+ }
+.runtimelog-list-item {
+     width: 100%;
+     height: 36px;
+     line-height: 36px;
+     border-bottom: 1px solid #2e69a0;
+     color: #26578a;
+     font-weight: bold;
+     border-left: 4px solid transparent;
+     cursor: pointer;
+ }
+ .runtimelog-list-item:hover {
+     background: rgba(38, 82, 133, .6);
+     border-left: 4px solid #4fb0ff;
+ }
+ .runtimelog-list>.runtimelog-list-item:last-child {
+    border-bottom: 0;
+ }
+ .runtimelog-list-item p {
+     height: 36px;
+     line-height: 36px;
+     display: inline-block;
+     width: 96%;
+     margin-left: 17px;
+ }
+ .runtimelog-list-item .runtime-date {
+     margin-right: 10px;
+     margin-left: 10px;
+ }
+ .runtimelog-list-item .runtime-time {
+     margin-right: 35px;
+ }
+
+/*
+ *center-right-area
+ */
+ .center-control-wrap .center-control-rightbar {
+    width: 402px;
+    height: 954px;
+    float: left;
+    background: url('img/background/resourceusebg.png') no-repeat left top; 
+    padding-left: 17px;
+ }
+.center-right-provincial {
+    width: 91%;
+    position: relative;
+    top: 25px;
+    height: 456px;
+}
+.center-right-city {
+    width: 91%;
+    position: relative;
+    top: 20px;
+    height: 456px;
+}
+.center-right-provincial > h4, .center-right-city > h4 {
+    text-align: center;
+    color: #fff;
+    width: 88%;
+    position: relative;
+    left: 25px;
+}
+.center-right-descriptive {
+    color: #3ae7ff;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+
+}
+.center-right-descriptive > span {
+    font-size: 14px;
+    position: absolute;
+    left: 2px;
+}
+.center-right-descriptive > b {
+    font-size: 16px;
+    position: absolute;
+    right: 30px;
+}
+.center-right-descriptive > i {
+    font-size: 12px;
+    font-style: normal;
+    position: absolute;
+    right: 10px;
+}
+.center-right-progressbar {
+    width: 100%;
+    height: 24px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+.center-right-progressbar .center-right-progressbarred {
+    height: 24px;
+    line-height: 24px;
+    background: #c94a21;
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+}
+.center-right-progressbar .center-right-progressbarred .center-right-progressbargreen {
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    width: 73%;
+    color: #fff;
+    padding-left: 20px;
+    background: linear-gradient(left, #33964f, #10d386); 
+    background: -moz-linear-gradient(left, #33964f, #10d386);
+    background: -webkit-linear-gradient(left,  #33964f , #10d386);
+    border-radius: 20px;
+    position: absolute;
+    font-weight: bold;
+}
+.center-right-progressbar .center-right-progressbarred > b {
+    position: absolute;
+    right: 10px;
+}
+.center-right-content-wrap {
+    background: url('img/background/resourceuseitembg.png') no-repeat left top; 
+    width: 358px;
+    height: 356px;
+    margin-left: 4px;
+    padding: 8px;
+}
+.center-right-content-wrap .center-right-content {
+    width: 91%;
+    height: 72px;
+    position: relative;
+    margin-bottom: 12px;
+}
+.center-right-content-wrap .center-right-content > p {
+    display: inline-block;
+    width: 20px;
+    height: 72px;
+    line-height: 14px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 7px;
+    padding-top: 14px;
+}
+
+.center-right-content-wrap .center-right-content .center-right-content-item {
+    width: 292px;
+    height: 72px;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+.center-right-content-item .center-content-item-datachange, .center-right-content-item .center-content-item-structdata {
+    display: inline-block;
+    width:136px;
+}
+.center-right-content-item .center-content-item-datachange > h5 {
+    color: #3ae7ff;
+    font-size: 14px;
+    display: inline-block;
+    width: 84px;
+    line-height: 23px;
+}
+.center-right-content-item .center-content-item-datachange > span {
+    color: #fff;
+}
+.center-right-content-item .center-content-item-datachange > span > b {
+    font-size: 16px;
+}
+
+.center-right-content-item .center-content-item-structdata > h5 {
+    color: #3ae7ff;
+    font-size: 14px;
+    display: inline-block;
+    width: 84px;
+    line-height: 23px;
+}
+.center-right-content-item .center-content-item-structdata > span {
+    color: #fff;
+}
+.center-right-content-item .center-content-item-structdata > span > b {
+    font-size: 16px;
+}
+.center-right-emoticon {
+    height: 24px;
+    line-height: 24px;
+    width: 275px;
+    background: rgba(8, 21, 39, .5);
+    border-radius: 2px;
+    display: inline-block;
+    position: absolute;
+    left: 48px;
+    top: 61px;
+}
+.emoticonsuccess, .emoticonfail {
+    height: 24px;
+    line-height: 24px;
+    width: 110px;
+    padding-left: 24px;
+    text-align: center;
+    display: inline-block;
+}
+.emoticonsuccess > b {
+    font-size: 12px;
+    color: #0fde84;
+}
+.emoticonfail > b {
+    font-size: 12px;
+    color: #e27c18;
+}

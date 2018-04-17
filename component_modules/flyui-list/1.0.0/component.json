@@ -1,0 +1,13 @@
+ {
+   "name": "list",
+   "version": "1.0.0",
+   "description": "flyui list",
+   "main": "list.js",
+   "files": [
+     "list.js"
+   ],
+   "dependencies": {
+      "lib/fly": "1.2.6",
+      "lib/jquery": "1.8.2"
+   }
+ }

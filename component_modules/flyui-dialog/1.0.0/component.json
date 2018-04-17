@@ -1,0 +1,16 @@
+{
+  "name": "dialog",
+  "version": "1.0.0",
+  "description": "flyui dialog",
+  "main": "dialog.js",
+  "files": [
+    "dialog.js",
+    "dialog.tpl",
+    "drag.js",
+    "dialog.css"
+  ],
+  "dependencies": {
+    "lib/fly": "1.2.6",
+    "lib/jquery": "1.8.2"
+  }
+}
