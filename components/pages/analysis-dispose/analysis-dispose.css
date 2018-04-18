@@ -1,0 +1,39 @@
+.analysis-dispose-wrap {
+    width:1920px;
+    height:768px;
+    background: #fff;
+}
+.dateTabs {
+    width: 117px;
+    display:inline-block;
+    position: relative;
+    top: -10px;
+}
+.dateTabs > a {
+    color: #666;
+    font-size: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.dateTabs > a.active {
+    color: #108eea;
+    font-size: 12px;
+}
+.datepickers-now, 
+.datepickers-currentWeek,
+.datepickers-currentMonth{
+    width:255px;
+    display:inline-block;
+}
+.analysis-dispose-planeWrap {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.analysis-dispose-planeitem {
+    height: 108px;
+    width: 280px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    float: left;
+    margin-right: 18px;
+}

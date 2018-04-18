@@ -1,0 +1,43 @@
+<div class="analysis-dispose-wrap">
+  <div class="row">
+    <div class="col-xs-5 col-xs-offset-8">
+        <div class="dateTabs">
+            <a name="now" class="dateTab-now">今日</a>
+            <a name="week" class="dateTab-currentWeek active">本周</a>
+            <a name="month" class="dateTab-currentMonth">本月</a>
+        </div>
+        <div 
+            id="datepickers-now"
+            class="datepickers-now"
+            data-role="datepicker" 
+            data-placeholder="请选择日期" 
+            data-format="yyyy-MM-dd"
+            data-bind="events: {change: options.valueEvent}, visible: options.nowShow">
+        </div>
+        <div 
+            id="datepickers-currentWeek"
+            class="datepickers-currentWeek"
+            data-role="datepicker" 
+            data-placeholder="请选择本周" 
+            data-format="yyyy-MM-dd"
+            data-bind="events: {change: options.valueEvent}, visible: options.weekShow">
+        </div>
+        <div 
+            id="datepickers-currentMonth"
+            class="datepickers-currentMonth"
+            data-role="datepicker" 
+            data-placeholder="请选择本月" 
+            data-format="yyyy-MM-dd"
+            data-bind="events: {change: options.valueEvent}, visible: options.monthShow">
+        </div>
+    </div>
+  </div>
+  <div class="row analysis-dispose-planeWrap">
+    <div class="col-xs-9 col-xs-offset-3">
+      <div class="analysis-dispose-planeitem"></div>
+      <div class="analysis-dispose-planeitem"></div>
+      <div class="analysis-dispose-planeitem"></div>
+      <div class="analysis-dispose-planeitem"></div>
+    </div>
+  </div>
+</div>

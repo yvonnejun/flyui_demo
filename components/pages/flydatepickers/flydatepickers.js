@@ -10,7 +10,7 @@ var fly = require('fly');
 var that;
 module.exports = fly.Component.extend({
     name: 'datepicker-view',
-    template: fly.template(__inline('./datepickers.html')),
+    template: fly.template(__inline('./flydatepickers.html')),
     ctor: function (element, options) {
         this._super(element, options);
         that = this;
