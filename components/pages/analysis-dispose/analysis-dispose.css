@@ -25,15 +25,56 @@
     width:255px;
     display:inline-block;
 }
-.analysis-dispose-planeWrap {
+.planeWrap {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.analysis-dispose-planeitem {
-    height: 108px;
-    width: 280px;
+.planeitem {
+    height: 82px;
+    width: 254px;
     border: 1px solid #ebebeb;
     border-radius: 3px;
     float: left;
     margin-right: 18px;
+    padding: 26px 0 0 29px;
+}
+.planeitem-content {
+    float: left;
+    width: 76px;
+    height: 52px;
+}
+.planeitem-title {
+    display: block;
+    color: #999;
+    font-size: 12px;
+}
+.planeitem-text {
+    display: block;
+    color: #666;
+    font-size: 28px;
+    font-family: '黑体';
+}
+.echart2Wrap {
+    height:308px; 
+    border: 1px solid #ebebeb; 
+    border-radius: 3px;
+}
+.icon {
+    float: left;
+    width: 56px;
+    height: 56px;
+    margin-right: 24px;
+    position: relative;
+} 
+.icon-return {
+    background: url(./img/icon_return.png) no-repeat left top;
+}
+.icon-destroy {
+    background: url(./img/icon_destroy.png) no-repeat left top;
+}
+.icon-case {
+    background: url(./img/icon_case.png) no-repeat left top;
+}
+.icon-auction {
+    background: url(./img/icon_auction.png) no-repeat left top;
 }
