@@ -31,26 +31,13 @@ var CONFIGPATH = {
             findRuntimeResourceData: ISWEBVIEW && '252660b2ae514c2382e494cb4f83dda7' || CONTEXTPATH + "/dataresources/runtimecontrol.json",
 
         },
-        SHARED_RUN: {
-            findCollectGroup: ISWEBVIEW && '252660b2ae514c2382e494cb4f83dda7' || CONTEXTPATH + '/flowAnalysis/findCollectGroup.do',
-            setAreaCollect: ISWEBVIEW && '144c206784334fd3889f97dfbe659366' || CONTEXTPATH + '/flowAnalysis/setAreaCollect.do',
-            findCrowdHeat: ISWEBVIEW && '388f680d11c64956bacfc95d7223eec3' || CONTEXTPATH + "/flowAnalysis/findCrowdHeat.do",
-            findScenes: ISWEBVIEW && '0371d4dd6ee54ec98961a45eb06a5cab' || CONTEXTPATH + "/flowAnalysis/findScenes.do",
-            isAreaCollected: ISWEBVIEW && '00fca9ca3ca94a1fa28346029c31e3eb' || CONTEXTPATH + "/flowAnalysis/isAreaCollected.do",
-            findTouristSourceDistrubute: ISWEBVIEW && 'f6bd7d5bee7d4bb6b4612e179588394d' || CONTEXTPATH + "/flowAnalysis/findTouristSourceDistribute.do",
-            findFlowOverview: ISWEBVIEW && '49cc47168b004294813fec98ba77d96c' || CONTEXTPATH + "/flowAnalysis/findFlowOverview.do",
-            getCountryNum: ISWEBVIEW && 'de5d200506f242aa8313d66b00f8c9a1' || CONTEXTPATH + "/flowAnalysis/getCountryNum.do",
-            findAreaFlowByHour: ISWEBVIEW && 'f26b132110d641278670fc73d9768a42' || CONTEXTPATH + "/flowAnalysis/findAreaFlowByHour.do",
-            findSecAreaFlowByHour: ISWEBVIEW && '6db88725e03f4dce8c41a8250595c538' || CONTEXTPATH + "/flowAnalysis/findSecAreaFlowByHour.do",
-        },
         COMMON:{
             LogoutRequest: ISWEBVIEW && '63bb2605de69470bbd570aad5b24ed61' || CONTEXTPATH + '/logout.do',
             LoginRequest: ISWEBVIEW && '3584aa906c6b408c9192b8bcc7011f1d' || CONTEXTPATH + '/login.do',
             validateUserName: ISWEBVIEW && '8d11298eddce46f3ada1bfc37ddab502' || CONTEXTPATH + '/validateUserName.do',
         },
-        SYSTEM:{
-            getUserSettingInfo: ISWEBVIEW && 'dd0c8ac810224ebfac81ae0f9020c57d' || CONTEXTPATH + '/system/getUserSettingInfo.do',
-            setUserAlarm: ISWEBVIEW && '9a34727c294e4425a29adf30c801db88' || CONTEXTPATH + '/system/setUserAlarm.do',
+        ANALYSIS:{
+            getDisposeList: ISWEBVIEW && 'dd0c8ac810224ebfac81ae0f9020c57d' || CONTEXTPATH + '/analysis/disposeList.json',
         },
     },
     GET_PATH: function(id, path, ip) {

@@ -34,39 +34,99 @@
   </div>
   <div class="row planeWrap">
     <div class="col-xs-9 col-xs-offset-3">
-      <div class="planeitem">
-        <i class="icon icon-return"></i>
+      <div class="planeitem planeitem-return">
+        <i class="dispose-icon dispose-icon-return"></i>
         <div class="planeitem-content">
           <span class="planeitem-title">归还量</span>
           <b class="planeitem-text">89</b>
         </div>
       </div>
-      <div class="planeitem">
-        <i class="icon icon-destroy"></i>
+      <div class="planeitem planeitem-destroy">
+        <i class="dispose-icon dispose-icon-destroy"></i>
         <div class="planeitem-content">
           <span class="planeitem-title">销毁量</span>
           <b class="planeitem-text">21</b>
         </div>
       </div>
-      <div class="planeitem">
-        <i class="icon icon-case"></i>
+      <div class="planeitem planeitem-auction">
+        <i class="dispose-icon dispose-icon-auction"></i>
         <div class="planeitem-content">
-          <span class="planeitem-title">案件量</span>
+          <span class="planeitem-title">拍卖量</span>
           <b class="planeitem-text">54</b>
         </div>
       </div>
-      <div class="planeitem">
-        <i class="icon icon-auction"></i>
+      <div class="planeitem planeitem-case">
+        <i class="dispose-icon dispose-icon-case"></i>
         <div class="planeitem-content">
-          <span class="planeitem-title">拍卖量</span>
+          <span class="planeitem-title">案件量</span>
           <b class="planeitem-text">380</b>
         </div>
       </div>
     </div>
   </div>
   <div class="row">
-    <div class="col-xs-9 col-xs-offset-3">
-      <div id="main" class="col-xs-10 echart2Wrap"></div>
+    <div class="col-xs-9 col-xs-offset-3 dispose-charts-wrap">
+      <div class="dispose-type-wrap">
+        <ul>
+          <li><input type="radio" name="dispose-type" checked><label>全部</label></li>
+          <li><input type="radio" name="dispose-type"><label>归还</label></li>
+          <li><input type="radio" name="dispose-type"><label>销毁</label></li>
+          <li><input type="radio" name="dispose-type"><label>拍卖</label></li>
+        </ul>
+        <div class="dispose-type-tabs">
+          <a name="goodsType" href="javascript:void(0)" class="type-active" data-bind="click: options.doTypeEvent">按财物类型</a>
+          <a name="caseUnit" href="javascript:void(0)" data-bind="click: options.doTypeEvent">按办案单位</a>
+        </div>
+      </div>
+      <div id="main" class="col-xs-10 echart2Wrap" data-bind="visible: options.typeFlag"></div>
+      <!--<div id="main2" class="col-xs-10 echart2Wrap" data-bind="invisible: options.typeFlag"></div>-->
     </div>
   </div>
+  <div class="row">
+    <div class="col-xs-9 col-xs-offset-3 dispose-charts-wrap">
+      <div id="saveDetailPie1"></div>
+      <!--<div id="saveDetailPie2"></div>-->
+    </div>
+  </div>
+  <!-- 列表数据 -->
+  <!--<div class="row">
+    <div class="col-xs-9 col-xs-offset-3">  
+        <div class="grid-wrap">
+            <table class="grid-table" cellspacing="0">
+                <thead>
+                <tr>
+                    <th width="30px" field="_index">序号</th>
+                    <th width="60px">财物编号</th>
+                    <th width="60px">财物名称</th>
+                    <th width="60px">类型</th>
+                    <th width="60px">案件编号</th>
+                    <th width="40px">处置类型</th>
+                    <th width="40px">处置人</th>
+                    <th width="60px">处置单位</th>
+                    <th width="100px">处置时间</th>
+                    <th width="100px">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr data-bind="invisible: options.listShow">
+                      <td colspan="6" >正在加载...</td>
+                  </tr>
+                  <list data-bind="source: options.disposeList">
+                  <tr data-bind="visible: options.listShow">
+                      <td><div class="ell"  data-bind="text:cwbh"></div></td>
+                      <td><div class="ell"  data-bind="text:cwmc"></div></td>
+                      <td><div class="ell"  data-bind="text:type"></div></td>
+                      <td><div class="ell"  data-bind="text:ajbh"></div></td>
+                      <td><div class="ell"  data-bind="text:czlx"></div></td>
+                      <td><div class="ell"  data-bind="text:czr"></div></td>
+                      <td><div class="ell"  data-bind="text:czdw"></div></td>
+                      <td><div class="ell"  data-bind="text:czsj"></div></td>
+                  </tr>
+                  </list>
+                </tbody>
+            </table>
+            <div id="myPagination" data-role="pagination" data-option-label=" " data-bind="source: options.disposeList"></div>
+        </div>
+    </div>
+  </div>-->
 </div>
